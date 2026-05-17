@@ -93,9 +93,7 @@ const DAY_NAMES = ["Su","Mo","Tu","We","Th","Fr","Sa"];
 /* ─────────────────────────────────────────────────────────────────────────
    POPOVER ANIMATION VARIANTS
    ───────────────────────────────────────────────────────────────────────── */
-import type { Variants } from "framer-motion";
-
-const popoverVariants: Variants = {
+const popoverVariants = {
   hidden: {
     opacity: 0,
     y: 12,
@@ -106,9 +104,9 @@ const popoverVariants: Variants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.30, ease: [0.25, 0.46, 0.45, 0.94] as any },
+    transition: { duration: 0.30, ease: [0.25, 0.46, 0.45, 0.94] as const },
   },
-};
+} as const;
 
 /* ─────────────────────────────────────────────────────────────────────────
    MINI CALENDAR COMPONENT
@@ -437,7 +435,7 @@ export default function BookingBar() {
         />
 
         {/* Bar body */}
-        <div className="relative z-10 bg-[#FAF8F5]er/95 backdrop-blur-glass-lg rounded-[20px] overflow-hidden">
+        <div className="relative z-10 bg-carbon-darker/95 backdrop-blur-glass-lg rounded-[20px] overflow-hidden">
 
           {/* Top accent */}
           <div className="h-[2px] w-full bg-gradient-to-r from-envoy-red/80 via-envoy-red/40 to-transparent" />
