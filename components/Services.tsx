@@ -20,7 +20,7 @@ import {
 /* ─────────────────────────────────────────────────────────────────────────
    TYPES & DATA
    ───────────────────────────────────────────────────────────────────────── */
-const INSTAGRAM_URL = "https://www.instagram.com/theenvoyabuja/";
+const INSTAGRAM_URL = "https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx";
 
 const BENTO_DATA = [
   {

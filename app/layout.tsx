@@ -226,7 +226,7 @@ export default function RootLayout({
               "currenciesAccepted": "NGN, USD",
               "paymentAccepted": "Cash, Credit Card",
               "sameAs": [
-                "https://www.instagram.com/theenvoyabuja/",
+                "https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx",
                 "https://www.facebook.com/theenvoyabuja",
                 "https://www.linkedin.com/company/theenvoyabuja"
               ]

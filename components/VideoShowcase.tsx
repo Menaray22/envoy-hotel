@@ -8,7 +8,7 @@ import { Play, Shield, Crosshair, Eye, Lock, Wifi } from "lucide-react";
    CONSTANTS
    ───────────────────────────────────────────────────────────────────────── */
 const YOUTUBE_EMBED =
-  "https://www.youtube.com/embed/YOUR_YOUTUBE_ID?autoplay=0&controls=1&rel=0&modestbranding=1";
+  "https://www.youtube.com/embed/EcK00mYVE_s?autoplay=0&controls=1&rel=0&modestbranding=1";
 
 /* ─────────────────────────────────────────────────────────────────────────
    ANIMATED SVG CORNER BRACKET
@@ -384,7 +384,7 @@ export default function VideoShowcase() {
             Want more? Follow our visual story on Instagram.
           </p>
           <motion.a
-            href="https://www.instagram.com/theenvoyabuja/"
+            href="https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03, y: -2 }}

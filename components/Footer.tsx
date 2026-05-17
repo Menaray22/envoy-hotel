@@ -18,7 +18,7 @@ const SOCIAL_LINKS = [
   {
     label: "Instagram",
     icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>,
-    href: "https://www.instagram.com/theenvoyabuja/",
+    href: "https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx",
     handle: "@theenvoyabuja",
   },
   {
@@ -220,7 +220,7 @@ export default function Footer() {
                 {col.items.map(item => (
                   <li key={item}>
                     <a
-                      href="https://www.instagram.com/theenvoyabuja/"
+                      href="https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="

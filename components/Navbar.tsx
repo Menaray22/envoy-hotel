@@ -441,7 +441,7 @@ export default function Navbar() {
           {/* ── MOBILE: Right actions (Instagram + Hamburger) ──── */}
           <div className="flex lg:hidden items-center gap-3">
             <a
-              href="https://www.instagram.com/theenvoyabuja/"
+              href="https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -639,7 +639,7 @@ export default function Navbar() {
 
                   <div className="flex items-center justify-center gap-6 pt-2">
                     <a
-                      href="https://www.instagram.com/theenvoyabuja/"
+                      href="https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="

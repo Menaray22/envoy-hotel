@@ -17,7 +17,7 @@ import { ArrowRight, ChevronDown, Shield, Star, MapPin } from "lucide-react";
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=2400&q=90&auto=format&fit=crop";
 
-const INSTAGRAM_URL = "https://www.instagram.com/theenvoyabuja/";
+const INSTAGRAM_URL = "https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx";
 
 const STATS = [
   { value: "2009", label: "Est. Abuja" },

@@ -289,7 +289,7 @@ function HeritagePillar({
 
         {/* Learn more link */}
         <motion.a
-          href="https://www.instagram.com/theenvoyabuja/"
+          href="https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ x: 4 }}
@@ -634,7 +634,7 @@ export default function Story() {
               <ArrowRight size={15} strokeWidth={2.5} />
             </motion.a>
             <motion.a
-              href="https://www.instagram.com/theenvoyabuja/"
+              href="https://www.instagram.com/abujatheenvoy?igsh=NWpmanc0cGJraWhx"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -1 }}
