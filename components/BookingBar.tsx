@@ -93,18 +93,20 @@ const DAY_NAMES = ["Su","Mo","Tu","We","Th","Fr","Sa"];
 /* ─────────────────────────────────────────────────────────────────────────
    POPOVER ANIMATION VARIANTS
    ───────────────────────────────────────────────────────────────────────── */
-const popoverVariants = {
+import type { Variants } from "framer-motion";
+
+const popoverVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 12,
     scale: 0.97,
-    transition: { duration: 0.20, ease: "easeIn" },
+    transition: { duration: 0.20 },
   },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.30, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.30, ease: [0.25, 0.46, 0.45, 0.94] as any },
   },
 };
 
