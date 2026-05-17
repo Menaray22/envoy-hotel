@@ -111,7 +111,7 @@ const cellVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { delay: i * 0.10, duration: 0.80, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { delay: i * 0.10, duration: 0.80 },
   }),
 };
 
@@ -359,7 +359,7 @@ export default function Services() {
             <motion.div className="flex items-center gap-3 mb-5"
               initial={{ opacity: 0, x: -24 }} animate={isHeaderInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.70 }}>
               <motion.div className="h-px bg-envoy-red origin-left"
-                initial={{ width: 0 }} animate={isHeaderInView ? { width: 32 } : { width: 0 }} transition={{ duration: 0.60, ease: [0.77, 0, 0.175, 1] }} />
+                initial={{ width: 0 }} animate={isHeaderInView ? { width: 32 } : { width: 0 }} transition={{ duration: 0.60 }} />
               <span className="label-text">Our Pillars</span>
             </motion.div>
             <motion.h2 id="services-heading" className="font-heading text-display-lg text-stone-900" style={{ fontWeight: 800 }}

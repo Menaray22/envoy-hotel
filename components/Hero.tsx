@@ -41,7 +41,7 @@ const fadeUpVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.90, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.90 },
   },
 };
 
@@ -57,7 +57,7 @@ const revealVariants = {
   hidden: { clipPath: "inset(0 100% 0 0)" },
   visible: {
     clipPath: "inset(0 0% 0 0)",
-    transition: { duration: 1.0, ease: [0.77, 0, 0.175, 1] },
+    transition: { duration: 1.0 },
   },
 };
 
@@ -116,7 +116,7 @@ function TacticalBracket({
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 1.8 + delay, duration: 0.50, ease: [0.25, 0.46, 0.45, 0.94] }}
+      transition={{ delay: 1.8 + delay, duration: 0.50 }}
       className={`absolute ${isBottom ? "bottom-0" : "top-0"} ${isRight ? "right-0" : "left-0"}`}
       aria-hidden
     >
@@ -379,7 +379,7 @@ export default function Hero() {
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: 32 }}
-              transition={{ delay: 0.50, duration: 0.60, ease: [0.77, 0, 0.175, 1] }}
+              transition={{ delay: 0.50, duration: 0.60 }}
               className="h-px bg-envoy-red flex-shrink-0"
             />
             <span className="label-text tracking-[0.22em]">
@@ -499,7 +499,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: 60, scale: 0.95 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
-          transition={{ delay: 1.20, duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{ delay: 1.20, duration: 1.0 }}
           className="
             hidden xl:block
             absolute right-16 top-1/2 -translate-y-1/2

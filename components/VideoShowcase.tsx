@@ -50,7 +50,7 @@ function AnimatedCornerBracket({
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ delay: delay + 0.15, duration: 0.55, ease: [0.77, 0, 0.175, 1] }}
+          transition={{ delay: delay + 0.15, duration: 0.55 }}
         />
         {/* Vertical arm */}
         <motion.line
@@ -63,7 +63,7 @@ function AnimatedCornerBracket({
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
-          transition={{ delay: delay + 0.15, duration: 0.55, ease: [0.77, 0, 0.175, 1] }}
+          transition={{ delay: delay + 0.15, duration: 0.55 }}
         />
         {/* Corner dot */}
         <motion.circle
@@ -240,7 +240,7 @@ export default function VideoShowcase() {
           ref={frameRef}
           initial={{ opacity: 0, y: 50, scale: 0.96 }}
           animate={isFrameInView ? { opacity: 1, y: 0, scale: 1 } : {}}
-          transition={{ duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{ duration: 1.0 }}
           className="relative max-w-5xl mx-auto"
         >
 

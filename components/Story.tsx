@@ -58,7 +58,7 @@ const fadeUpVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.90, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.90 },
   },
 };
 
@@ -67,7 +67,7 @@ const fadeLeftVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.90, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.90 },
   },
 };
 
@@ -76,7 +76,7 @@ const fadeRightVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.90, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.90 },
   },
 };
 
@@ -85,7 +85,7 @@ const scaleInVariants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.80, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.80 },
   },
 };
 
@@ -93,7 +93,7 @@ const lineRevealVariants = {
   hidden: { scaleX: 0 },
   visible: {
     scaleX: 1,
-    transition: { duration: 0.80, ease: [0.77, 0, 0.175, 1] },
+    transition: { duration: 0.80 },
   },
 };
 
@@ -109,7 +109,7 @@ const staggerItemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.70, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.70 },
   },
 };
 
@@ -334,14 +334,14 @@ function TimelineConnector() {
           className="w-px bg-gradient-to-b from-transparent via-envoy-red/40 to-transparent"
           initial={{ height: 0 }}
           animate={isInView ? { height: 64 } : { height: 0 }}
-          transition={{ duration: 0.80, ease: [0.77, 0, 0.175, 1] }}
+          transition={{ duration: 0.80 }}
         />
         <div className="w-1.5 h-1.5 rounded-full bg-envoy-red shadow-red-glow-sm" />
         <motion.div
           className="w-px bg-gradient-to-b from-transparent via-envoy-red/40 to-transparent"
           initial={{ height: 0 }}
           animate={isInView ? { height: 64 } : { height: 0 }}
-          transition={{ duration: 0.80, delay: 0.10, ease: [0.77, 0, 0.175, 1] }}
+          transition={{ duration: 0.80, delay: 0.10 }}
         />
       </motion.div>
     </div>
@@ -445,7 +445,7 @@ function SignatureQuote() {
         className="mt-8 mx-auto h-px bg-gradient-to-r from-transparent via-envoy-red/50 to-transparent"
         initial={{ width: 0 }}
         animate={isInView ? { width: "60%" } : { width: 0 }}
-        transition={{ delay: 0.60, duration: 1.0, ease: [0.77, 0, 0.175, 1] }}
+        transition={{ delay: 0.60, duration: 1.0 }}
       />
     </motion.div>
   );
@@ -564,13 +564,13 @@ export default function Story() {
             className="flex items-center gap-3 mb-6"
             initial={{ opacity: 0, x: -24 }}
             animate={isHeaderInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.70, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ duration: 0.70 }}
           >
             <motion.div
               className="h-px bg-envoy-red origin-left"
               initial={{ width: 0 }}
               animate={isHeaderInView ? { width: 32 } : { width: 0 }}
-              transition={{ duration: 0.60, ease: [0.77, 0, 0.175, 1] }}
+              transition={{ duration: 0.60 }}
             />
             <span className="label-text">Our Foundation</span>
           </motion.div>
@@ -582,7 +582,7 @@ export default function Story() {
             style={{ fontWeight: 800 }}
             initial={{ opacity: 0, y: 36 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.10, duration: 0.90, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ delay: 0.10, duration: 0.90 }}
           >
             A Legacy{" "}
             <span className="text-gradient-red">Written in</span>
@@ -594,7 +594,7 @@ export default function Story() {
             className="font-body text-base lg:text-lg text-stone-500 leading-relaxed"
             initial={{ opacity: 0, y: 24 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.20, duration: 0.80, ease: [0.25, 0.46, 0.45, 0.94] }}
+            transition={{ delay: 0.20, duration: 0.80 }}
           >
             The Envoy Hotel was built not just to provide accommodation, but to embody a philosophy:
             that every great exchange — whether of trade, of ideas, or of trust — begins at a table

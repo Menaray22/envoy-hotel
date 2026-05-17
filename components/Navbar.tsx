@@ -45,12 +45,12 @@ const mobileMenuVariants = {
   closed: {
     opacity: 0,
     clipPath: "inset(0 0 100% 0)",
-    transition: { duration: 0.45, ease: [0.77, 0, 0.175, 1] },
+    transition: { duration: 0.45 },
   },
   open: {
     opacity: 1,
     clipPath: "inset(0 0 0% 0)",
-    transition: { duration: 0.55, ease: [0.77, 0, 0.175, 1] },
+    transition: { duration: 0.55 },
   },
 };
 
@@ -59,7 +59,7 @@ const mobileNavItemVariants = {
   open: (i: number) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: 0.15 + i * 0.06, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { delay: 0.15 + i * 0.06, duration: 0.45 },
   }),
 };
 
@@ -74,7 +74,7 @@ const dropdownVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.28, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.28 },
   },
 };
 
@@ -336,7 +336,7 @@ export default function Navbar() {
       <motion.header
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.80, ease: [0.77, 0, 0.175, 1], delay: 0.10 }}
+        transition={{ duration: 0.80, delay: 0.10 }}
         className={`
           fixed top-0 left-0 right-0 z-nav
           transition-all duration-500

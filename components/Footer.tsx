@@ -124,7 +124,7 @@ function ContactStrip({ isInView }: { isInView: boolean }) {
     <motion.div
       initial={{ opacity: 0, y: 32 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.80, ease: [0.25, 0.46, 0.45, 0.94] }}
+      transition={{ duration: 0.80 }}
       className="
         relative overflow-hidden
         rounded-2xl

@@ -104,7 +104,7 @@ const popoverVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.30, ease: [0.25, 0.46, 0.45, 0.94] as const },
+    transition: { duration: 0.30 as const },
   },
 } as const;
 
@@ -422,7 +422,7 @@ export default function BookingBar() {
       <motion.div
         initial={{ opacity: 0, y: 40, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ delay: 0.20, duration: 0.80, ease: [0.25, 0.46, 0.45, 0.94] }}
+        transition={{ delay: 0.20, duration: 0.80 }}
         ref={barRef}
         className="relative rounded-2xl lg:rounded-[20px] overflow-visible"
         style={{ filter: "drop-shadow(0 32px 64px rgba(0,0,0,0.55))" }}
