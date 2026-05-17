@@ -176,11 +176,10 @@ export default function Footer() {
   const isInView = useInView(footerRef, { once: true, margin: "-60px 0px" });
 
   const staggerItem = (i: number) => ({
-    initial: { opacity: 0, y: 20 },
-    animate: isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 },
-    transition: { delay: 0.10 + i * 0.06, duration: 0.70, ease: [0.25, 0.46, 0.45, 0.94] },
-  });
-
+  initial: { opacity: 0, y: 20 },
+  animate: isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 },
+  transition: { delay: 0.10 + i * 0.06, duration: 0.70 },
+});
   return (
     <footer
       id="contact"
