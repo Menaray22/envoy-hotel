@@ -70,7 +70,6 @@ const wordVariants = {
     transition: {
       delay: 0.60 + i * 0.10,
       duration: 0.80,
-      ease: [0.25, 0.46, 0.45, 0.94],
     },
   }),
 };
